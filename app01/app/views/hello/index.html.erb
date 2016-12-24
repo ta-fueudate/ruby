@@ -1,2 +1,6 @@
-<h1>index page</h1>
-<p>this is sample page</p>
+<h1><%= @title %></h1>
+<p><%= @msg %></p>
+<form method="POST" action="/helo/index">
+    <input type="text" name="input1" value="<% @value %>">
+    <input type="submit">
+</form>
